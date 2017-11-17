@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EBS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .header{
+                background: #b92c28;
+                width: auto;
+                height: 100px;
+            }
+
+            .table {
+                /*display: table;    Allow the centering to work */
+                margin: 0 auto;
+            }
+
+            ul#horizontal-list {
+                min-width: 696px;
+                list-style: none;
+                padding-top: 20px;
+            }
+            ul#horizontal-list li {
+                display: inline;
+                color:white !important;
+                font-size: 36px;
+            }
+            .container{
+                font-size:24px;
+            }
+        </style>
+        <script type="text/javascript">
+            function displayInfo1(){
+                document.getElementById('info').innerHTML = "Testing";
+            }
+            function displayInfo2(){
+                document.getElementById('info').innerHTML = "Testing2";
+            }
+             function displayInfo3(){
+                document.getElementById('info').innerHTML = "Testing3";
+            }
+            function changeColor(ele){
+                ele.style.color = "blue";
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div class="header">
+                <div class="table">
+                    <ul id="horizontal-list">
+                        <li onclick="displayInfo1()" onmouseover="changeColor(this)">Page 1</li>
+                        <li onclick="displayInfo2()" onmouseover="changeColor(this)">Page 2</li>
+                        <li onclick="displayInfo3()" onmouseover="changeColor(this)">Page 3</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="container" id="info">
+            
+        </div>
+    </body>
+</html>
